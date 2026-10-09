@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-image: url("fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+   
+}
+.formulario {
+    background-color: white;
+    width: 260px;
+    padding: 50px;
+    margin: 100px auto;
+     text-align: center;
+   
+}
