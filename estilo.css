@@ -35,9 +35,8 @@ table {
 }
 
 th {
-    background-color: red;
-    color: white;
     padding: 10px;
+    background-color: rgb(207, 157, 110);
 }
 td{
     background-color: rgb(255, 255, 255);
