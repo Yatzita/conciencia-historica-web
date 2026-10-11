@@ -58,6 +58,14 @@ a {
         font-size: 90%;
     }
         
+  img {
+        width: 100%;
+        height: auto;
+    }
 
+    video {
+        width: 100%;
+        height: auto;
+    }
   
 }
