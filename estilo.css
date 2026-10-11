@@ -68,3 +68,16 @@ a {
         height: auto;
     }
 }
+dl {
+    margin: 10px;
+}
+
+dt {
+    font-weight: bold;
+    
+}
+
+dd {
+    margin-left: 0px;
+    margin-bottom: 8px;
+}
