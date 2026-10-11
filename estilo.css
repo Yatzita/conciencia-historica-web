@@ -1,0 +1,60 @@
+
+
+.menu {
+    background-color: rgba(240, 240, 240, 0.812);
+    padding: 15px;
+    width: 300px;
+
+}
+
+.menu a {
+    margin: 10px;
+    text-decoration:none ;
+    text-align: left;
+    color: rgb(90, 55, 30);  
+    font-family:monospace;
+}
+body {
+    font-family: monospace;
+}
+
+h2 {
+    font-family: Georgia;
+    color: rgb(60, 35, 20);
+}
+
+h3{
+     font-family: Georgia;
+     color: rgb(90, 55, 30);
+}
+
+table {
+    text-align: center;
+    border-color: lab(0% 0 0);
+     
+}
+
+th {
+    padding: 10px;
+     background-color: rgb(207, 157, 110)  ;
+}
+td{
+    background-color: azure;
+    color: black;
+    padding: 8px;
+   
+}
+p {
+    margin: 5px;
+}
+
+a {
+    color: rgb(184, 31, 8);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 90%;
+    }
+}
