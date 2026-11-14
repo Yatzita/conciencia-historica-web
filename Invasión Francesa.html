@@ -97,38 +97,41 @@
 <button id="boton1">Comenzar evaluación</button>
 </div>
     <script>
-         document.getElementById("boton1").onclick = function() {
-        let r4=Number(prompt("¿En qué año comenzó oficialmente el conflicto armado entre México y Estados Unidos?"));
-        let r5=prompt("¿Qué tratado puso fin a la guerra entre México y Estados Unidos?");
-        let r6=prompt("¿Quién fue el emperador de México durante la intervención francesa?");
-        let error2=0;
-
-        if(r4 =1846){
-               alert("Pregunta 1: ¡Correcto!");
-        } else {
-            alert("Pregunta 1: Incorrecto");
-               error2++;
-        }
-
-        if(r5=="Tratado de Guadalupe Hidalgo"||"tratado de guadalupe hidalgo"){
-                   alert("Pregunta 2: ¡Correcto!");
-        } else {
-            alert("Pregunta 2: Incorrecto");
-               error2++;
-        }
-        if(r6=="Maximiliano de Habsburgo"||"maximiliano de habsburgo"){
-            alert("Pregunta 3: ¡Correcto!");
-        } else {
-            alert("Pregunta 3: Incorrecto");
-               error2++;
-        }
-        if (error2== 3) {
-    alert("¡Necesitas repasar! Fortaleceras tus errores con los recursos complementarios");
-    window.location.href = "video2.html";
-
-    document.getElementById("").style.display = "block";}
         
-        };
+document.getElementById("boton1").onclick = function() {
+
+let r4=Number(prompt("¿En qué año comenzó oficialmente el conflicto armado entre México y Estados Unidos?"));
+let r5=prompt("¿Qué tratado puso fin a la guerra entre México y Estados Unidos?");
+let r6=prompt("¿Quién fue el emperador de México durante la intervención francesa?");
+let error2=0;
+
+if(r4 == 1846){
+    alert("Pregunta 1: ¡Correcto!");
+} else {
+    alert("Pregunta 1: Incorrecto");
+    error2++;
+}
+
+if(r5=="Tratado de Guadalupe Hidalgo" || r5=="tratado de guadalupe hidalgo"){
+    alert("Pregunta 2: ¡Correcto!");
+} else {
+    alert("Pregunta 2: Incorrecto");
+    error2++;
+}
+
+if(r6=="Maximiliano de Habsburgo" || r6=="maximiliano de habsburgo"){
+    alert("Pregunta 3: ¡Correcto!");
+} else {
+    alert("Pregunta 3: Incorrecto");
+    error2++;
+}
+
+if (error2 == 3) {
+    alert("¡Necesitas repasar! Fortalecerás tus errores con los recursos complementarios");
+    window.location.href = "video2.html";
+}
+
+};
     </script>
       
     
