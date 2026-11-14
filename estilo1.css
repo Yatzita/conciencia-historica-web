@@ -81,7 +81,7 @@ p {
 }
 
 /* Aquí se centra y hace responsivo tu video y tu audio automáticamente */
-video, audio {
+video {
     display: block;
     max-width: 100%;
     height: auto;
