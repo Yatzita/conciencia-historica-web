@@ -122,39 +122,42 @@
 </div>
 
 <script>
-    document.getElementById("boton").onclick = function() {
+    
+document.getElementById("boton").onclick = function() {
 
-        let r1 = prompt("¿Quién encabezó el inicio de la Independencia de México?");
-        let r2 = prompt("¿En qué fecha inició la Independencia de México?");
-        let r3 = prompt("¿Quién asumió el liderazgo después de la muerte de Miguel Hidalgo?");
-        let error1=0;
+    let r1 = prompt("¿Quién encabezó el inicio de la Independencia de México?");
+    let r2 = prompt("¿En qué fecha inició la Independencia de México?");
+    let r3 = prompt("¿Quién asumió el liderazgo después de la muerte de Miguel Hidalgo?");
+    let error1=0;
 
-        if (r1 == "Miguel Hidalgo y Costilla" || r1 == "miguel hidalgo y costilla") {
-            alert("Pregunta 1: ¡Correcto!");
-        } else {
-            alert("Pregunta 1: Incorrecto");
-               error1++;
-        }
+    if (r1 == "Miguel Hidalgo y Costilla" || r1 == "miguel hidalgo y costilla") {
+        alert("Pregunta 1: ¡Correcto!");
+    } else {
+        alert("Pregunta 1: Incorrecto");
+        error1++;
+    }
 
-        if (r2 == "16 de septiembre de 1810" || r2 == "16 DE SEPTIEMBRE DE 1810") {
-            alert("Pregunta 2: ¡Correcto!");
-        } else {
-            alert("Pregunta 2: Incorrecto");
-               error1++;
-        }
+    if (r2 == "16 de septiembre de 1810" || r2 == "16 DE SEPTIEMBRE DE 1810") {
+        alert("Pregunta 2: ¡Correcto!");
+    } else {
+        alert("Pregunta 2: Incorrecto");
+        error1++;
+    }
 
-        if (r3 == "José María Morelos y Pavón" || r3 == "josé maría morelos y pavón") {
-            alert("Pregunta 3: ¡Correcto!");
-        } else {
-            alert("Pregunta 3: Incorrecto");
-               error1++;
-        }
-        if (error1== 3) {
-    alert("¡Necesitas repasar! Fortaleceras tus errores con los recursos complementarios");
-    window.location.href = "video1.html";
+    if (r3 == "José María Morelos y Pavón" || r3 == "josé maría morelos y pavón") {
+        alert("Pregunta 3: ¡Correcto!");
+    } else {
+        alert("Pregunta 3: Incorrecto");
+        error1++;
+    }
 
-    document.getElementById("").style.display = "block";}
-    };
+    if (error1 == 3) {
+        alert("¡Necesitas repasar! Fortalecerás tus errores con los recursos complementarios");
+        window.location.href = "video1.html";
+    }
+
+};
+
 </script>
 
  
