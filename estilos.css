@@ -1,0 +1,117 @@
+/* Importamos la fuente */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Recuerda cambiar "fondo.jpeg" por la imagen más bonita que elijas */
+    background-image: url("fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    /* Fondo blanco con un toque de transparencia muy aesthetic */
+    background-color: #f1ede3;
+    backdrop-filter: blur(10px); /* Efecto difuminado moderno */
+    width: 100%;
+    max-width: 380px;
+    padding: 40px 30px;
+    border-radius: 20px; /* Bordes redondeados suaves */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.grupo-input {
+    margin-bottom: 18px;
+}
+
+.formulario label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 6px;
+}
+
+/* Estilo estético para inputs y selects */
+.formulario input[type="text"],
+.formulario select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #e1e1e1;
+    border-radius: 10px;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efecto al pasar el ratón o escribir (Focus) */
+.formulario input[type="text"]:focus,
+.formulario select:focus {
+    border-color: #bfa19c; /* Un tono cálido aesthetic, puedes cambiarlo */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(191, 161, 156, 0.15);
+}
+
+.grupo-boton {
+    margin-top: 30px;
+}
+
+
+.formulario input[type="submit"] {
+    width: 100%;
+    background: #C8AD7F; 
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background: #4f4f4f;
+    transform: translateY(-2px); 
+}
+
+.formulario input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 88%;
+        padding: 30px 20px;
+        margin: 20px;
+    }
+}

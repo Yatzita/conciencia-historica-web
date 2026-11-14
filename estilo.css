@@ -1,0 +1,236 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #f5efe6; /* Fondo beige / avellana claro */
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    text-align: left;
+}
+
+/* --- BARRA DE NAVEGACIÓN SUPERIOR --- */
+nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    box-shadow: 0 4px 20px rgba(60, 35, 20, 0.04);
+    border-bottom: 1px solid rgba(230, 219, 189, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: rgb(60, 35, 20);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e6dbbd;
+    color: rgb(74, 60, 43);
+}
+
+/* --- CAJA BLANCA Y DL (Exactamente el mismo formato y espaciado) --- */
+.caja-blanca, dl {
+    background: #ffffff;
+    padding: 20px 22px;
+    margin: 10px auto;
+    border-radius: 12px;
+    border: 1px solid #f2ede4;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    max-width: 870px;
+    box-sizing: border-box;
+}
+
+/* Propiedades específicas para el contenido dentro de dl */
+
+dl {
+    margin: 15px 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+dt {
+    font-weight: 600;
+    color: rgb(60, 35, 20);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 4px solid rgb(207, 157, 110); /* Línea decorativa aesthetic */
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+dd {
+    margin-left: 12px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+dd:last-child {
+    margin-bottom: 0;
+}
+
+/* --- CONTENEDOR GENERAL --- */
+.contenedor {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(60, 35, 20, 0.05);
+    border: 1px solid rgba(230, 219, 189, 0.8);
+    box-sizing: border-box;
+}
+
+/* --- MENÚ LATERAL --- */
+.menu {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    width: 260px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(60, 35, 20, 0.08);
+    border: 1px solid rgba(230, 219, 189, 0.5);
+}
+
+.menu a {
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: #3c2314;  
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: #e6dbbd;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgb(35, 16, 5);
+    margin-top: 20px; /* <--- Esto le da separación con respecto al nav o lo que esté arriba */
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+h2 {
+    
+    font-weight: 600;
+    color: rgb(60, 35, 20);
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(90, 55, 30);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* --- TABLAS --- */
+table {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(60, 35, 20, 0.06);
+    border: 1px solid #e6dbbd;
+}
+
+th {
+    padding: 12px;
+    background-color: rgb(207, 157, 110);
+    color: white;
+    font-weight: 500;
+}
+
+td {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 12px;
+    border-bottom: 1px solid #f2ede4;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+a {
+    color: rgb(184, 31, 8);
+    text-decoration: none;
+}
+
+/* --- IMÁGENES Y VIDEOS PERFECTAMENTE CENTRADOS Y RESPONSIVOS --- */
+img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* --- BOTONES --- */
+button, input[type="submit"] {
+    background-color: rgb(207, 157, 110);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: rgb(60, 35, 20);
+    transform: translateY(-2px);
+}
+
+/* --- ADAPTABLE A MÓVILES --- */
+@media (max-width: 600px) {
+    body {
+        font-size: 95%;
+    }
+
+    .caja-blanca, dl, .contenedor {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        padding: 12px;
+    }
+}
