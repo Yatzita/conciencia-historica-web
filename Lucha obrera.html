@@ -86,40 +86,42 @@
 </div>
 <button id="boton1">Comenzar evaluación</button>
     <script>
-         document.getElementById("boton1").onclick = function() {
+         
+document.getElementById("boton1").onclick = function() {
 
-    
-         let r7=prompt("¿Durante qué periodo se consolidó la industrialización en México?");
+let r7=prompt("¿Durante qué periodo se consolidó la industrialización en México?");
 let r8=prompt("¿Qué organización brindaba apoyo a los trabajadores en casos de enfermedad, accidentes o desempleo?");
 let r9=prompt("¿Qué ley impulsó la desamortización de las tierras en 1856?");
 let error3=0;
 
-if(r7=="Porfiriato"||"porfiriato"){
+if(r7=="Porfiriato" || r7=="porfiriato"){
     alert("Pregunta 1: ¡Correcto!");
 } else {
     alert("Pregunta 1: Incorrecto");
     error3++;
 }
 
-if(r8=="Sociedades mutualistas"||"sociedades mutualistas"){
+if(r8=="Sociedades mutualistas" || r8=="sociedades mutualistas"){
     alert("Pregunta 2: ¡Correcto!");
 } else {
     alert("Pregunta 2: Incorrecto");
     error3++;
 }
 
-if(r9=="Ley Lerdo"||"ley lerdo"){
+if(r9=="Ley Lerdo" || r9=="ley lerdo"){
     alert("Pregunta 3: ¡Correcto!");
 } else {
     alert("Pregunta 3: Incorrecto");
     error3++;
 }
-         if (error3== 3) {
-    alert("¡Necesitas repasar! Fortaleceras tus errores con los recursos complementarios");
-    window.location.href = "video3.html";
 
-    document.getElementById("").style.display = "block";}
-    };
+if (error3 == 3) {
+    alert("¡Necesitas repasar! Fortalecerás tus errores con los recursos complementarios");
+    window.location.href = "video3.html";
+}
+
+};
+
    </script>
 
       
