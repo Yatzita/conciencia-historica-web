@@ -46,10 +46,10 @@
 <button id="boton4">Comenzar evaluación</button>
 </div>
     <script>
-         document.getElementById("boton4").onclick = function() {
+        
+document.getElementById("boton4").onclick = function() {
 
-
-   let r13=Number(prompt("¿En qué año se creó la Escuela Normal para profesoras?"));
+let r13=Number(prompt("¿En qué año se creó la Escuela Normal para profesoras?"));
 let r14=prompt("¿Qué exigían los clubes femeninos y periódicos dirigidos por mujeres?");
 let r15=prompt("¿Durante qué siglo comenzaron a reconocerse la mayoría de los derechos políticos y sociales de las mujeres?");
 let error5=0;
@@ -61,26 +61,27 @@ if(r13==1889){
     error5++;
 }
 
-if(r14=="Educación, trabajo digno y derecho al voto"||"educación, trabajo digno y derecho al voto"){
+if(r14=="Educación, trabajo digno y derecho al voto" || r14=="educación, trabajo digno y derecho al voto"){
     alert("Pregunta 2: ¡Correcto!");
 } else {
     alert("Pregunta 2: Incorrecto");
     error5++;
 }
 
-if(r15=="Siglo XX"||"siglo xx"){
+if(r15=="Siglo XX" || r15=="siglo xx"){
     alert("Pregunta 3: ¡Correcto!");
 } else {
     alert("Pregunta 3: Incorrecto");
     error5++;
 }
-         
-         if (error5== 3) {
-    alert("¡Necesitas repasar! Fortaleceras tus errores con los recursos complementarios");
-    window.location.href = "video5.html";
 
-    document.getElementById("").style.display = "block";}
-    };
+if (error5 == 3) {
+    alert("¡Necesitas repasar! Fortalecerás tus errores con los recursos complementarios");
+    window.location.href = "video5.html";
+}
+
+};
+
    </script>
         
 <br><br><br>
