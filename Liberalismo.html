@@ -108,13 +108,14 @@
 <button id="boton1">Comenzar evaluación</button>
 </div>
     <script>
-        document.getElementById("boton1").onclick = function() {
- let r16=prompt("¿Qué doctrina promueve la libertad individual y la igualdad ante la ley?");
+document.getElementById("boton1").onclick = function() {
+
+let r16=prompt("¿Qué doctrina promueve la libertad individual y la igualdad ante la ley?");
 let r17=prompt("¿En qué año se promulgó la primera Constitución Federal de México?");
 let r18=prompt("¿Quién fue el primer presidente que gobernó bajo la Constitución de 1824?");
 let error6=0;
 
-if(r16=="Liberalismo"||"liberalismo"){
+if(r16=="Liberalismo" || r16=="liberalismo"){
     alert("Pregunta 1: ¡Correcto!");
 } else {
     alert("Pregunta 1: Incorrecto");
@@ -128,17 +129,18 @@ if(r17=="1824"){
     error6++;
 }
 
-if(r18=="Guadalupe Victoria"||"guadalupe victoria"){
+if(r18=="Guadalupe Victoria" || r18=="guadalupe victoria"){
     alert("Pregunta 3: ¡Correcto!");
 } else {
     alert("Pregunta 3: Incorrecto");
     error6++;
 }
-     if (error6== 3) {
-    alert("¡Necesitas repasar! Fortaleceras tus errores con los recursos complementarios");
-    window.location.href = "video4.html";
 
-    document.getElementById("").style.display = "block";}
+if (error6 == 3) {
+    alert("¡Necesitas repasar! Fortalecerás tus errores con los recursos complementarios");
+    window.location.href = "video4.html";
+}
+
     };
 
 
