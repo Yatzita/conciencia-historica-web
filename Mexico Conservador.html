@@ -120,42 +120,42 @@
 <button id="boton4">Comenzar evaluación</button>
 </div>
     <script>
-         document.getElementById("boton4").onclick = function() {
+    
+document.getElementById("boton4").onclick = function() {
 
-       
-            let r10=prompt("¿Qué religión defendían principalmente los conservadores en el México del siglo XIX?");
+let r10=prompt("¿Qué religión defendían principalmente los conservadores en el México del siglo XIX?");
 let r11=prompt("¿Qué guerra inició con la promulgación de la Constitución de 1857?");
 let r12=prompt("¿Qué modelo político buscaba distribuir el poder entre el gobierno federal y los estados?");
 let error4=0;
 
-if(r10=="Católica"||"catolica"||"religion catolica"){
+if(r10=="Católica" || r10=="catolica" || r10=="religion catolica"){
     alert("Pregunta 1: ¡Correcto!");
 } else {
     alert("Pregunta 1: Incorrecto");
     error4++;
 }
 
-if(r11=="Guerra de Reforma"||"guerra de reforma"){
+if(r11=="Guerra de Reforma" || r11=="guerra de reforma"){
     alert("Pregunta 2: ¡Correcto!");
 } else {
     alert("Pregunta 2: Incorrecto");
     error4++;
 }
 
-if(r12=="Federalismo"||"federalismo"){
+if(r12=="Federalismo" || r12=="federalismo"){
     alert("Pregunta 3: ¡Correcto!");
 } else {
     alert("Pregunta 3: Incorrecto");
     error4++;
 }
-         
-         
-         if (error4== 3) {
-    alert("¡Necesitas repasar! Fortaleceras tus errores con los recursos complementarios");
-    window.location.href = "video4.html";
 
-    document.getElementById("").style.display = "block";}
-    };
+if (error4 == 3) {
+    alert("¡Necesitas repasar! Fortalecerás tus errores con los recursos complementarios");
+    window.location.href = "video4.html";
+}
+
+};
+
    </script>
         
 
